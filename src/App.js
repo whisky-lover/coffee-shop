@@ -1,7 +1,8 @@
-import OnBoarding from "./views/OnBoarding";
+import Home from "./views/Home";
+// import OnBoarding from "./views/OnBoarding";
 
 function App() {
-	return <OnBoarding></OnBoarding>;
+	return <Home></Home>;
 }
 
 export default App;

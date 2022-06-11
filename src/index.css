@@ -6,6 +6,10 @@
 	body {
 		@apply m-0 font-sans-serif overflow-x-hidden !important;
 	}
+
+	.img {
+		@apply object-cover w-full h-full;
+	}
 }
 
 body {
