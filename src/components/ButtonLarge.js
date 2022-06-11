@@ -1,10 +1,11 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 
 const ButtonLarge = ({ title }) => {
 	return (
-		<button className="hover:-translate-y-2 shadow-stone-800 shadow-lg transition-all duration-300 flex justify-center items-center select-none outline-none border-none cursor-pointer text-lightGray bg-brown w-4/5 lg:w-1/4 font-bold py-5 px-16 text-2xl capitalize rounded-full">
-			{title}
+		<button className="flex items-center justify-center w-4/5 px-16 py-5 text-2xl font-bold capitalize transition-all duration-300 border-none rounded-full shadow-lg outline-none cursor-pointer select-none hover:-translate-y-2 shadow-stone-800 text-lightGray bg-brown lg:w-1/4">
+			<Link to="/home">{title}</Link>
 		</button>
 	);
 };
