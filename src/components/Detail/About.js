@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "react";
 
 const About = ({ content }) => {
 	return (
@@ -7,6 +8,10 @@ const About = ({ content }) => {
 			<p className="text-lg leading-8">{content}</p>
 		</div>
 	);
+};
+
+About.propTypes = {
+	content: PropTypes.string,
 };
 
 About.defaultProps = {

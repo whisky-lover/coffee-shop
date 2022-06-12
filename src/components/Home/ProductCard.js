@@ -1,6 +1,7 @@
 import React from "react";
 import star from "../../assets/star.svg";
 import { Link } from "react-router-dom";
+import PropTypes from "prop-types";
 
 const ProductCard = ({ img, name, dsc, rating, price }) => {
 	return (
@@ -32,12 +33,19 @@ const ProductCard = ({ img, name, dsc, rating, price }) => {
 	);
 };
 
+ProductCard.propTypes = {
+	name: PropTypes.string,
+	dsc: PropTypes.string,
+	price: PropTypes.number,
+	rating: PropTypes.number,
+};
+
 ProductCard.defaultProps = {
 	img: "https://images.unsplash.com/photo-1523942839745-7848c839b661?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
 	name: "Cappucino",
 	dsc: "coffee, fat milk",
-	price: "50",
-	rating: "5.0",
+	price: 50,
+	rating: 4.9,
 };
 
 export default ProductCard;

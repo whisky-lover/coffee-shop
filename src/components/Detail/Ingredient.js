@@ -1,4 +1,6 @@
 import React from "react";
+import PropTypes from "prop-types";
+import bean from "../../assets/coffee-bean.svg";
 
 const Ingredient = ({ img, name, isLast }) => {
 	return (
@@ -14,6 +16,17 @@ const Ingredient = ({ img, name, isLast }) => {
 			<h3 className="text-lg font-semibold">{name}</h3>
 		</div>
 	);
+};
+
+Ingredient.propTypes = {
+	name: PropTypes.string,
+	isLast: PropTypes.bool,
+};
+
+Ingredient.defaultProps = {
+	name: "Coffee",
+	isLast: false,
+	img: bean,
 };
 
 export default Ingredient;

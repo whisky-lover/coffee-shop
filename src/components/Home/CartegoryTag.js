@@ -1,4 +1,6 @@
 import React from "react";
+import PropTypes from "prop-types";
+import coldbrew from "../../assets/coldbrew.svg";
 
 const CartegoryTag = ({ isActive, name, icon }) => {
 	return (
@@ -18,4 +20,11 @@ const CartegoryTag = ({ isActive, name, icon }) => {
 	);
 };
 
+CartegoryTag.propsTypes = { isActive: PropTypes.bool, name: PropTypes.string };
+
+CartegoryTag.defaultProps = {
+	isActive: false,
+	name: "Latte",
+	icon: coldbrew,
+};
 export default CartegoryTag;
