@@ -1,12 +1,15 @@
 import React from "react";
 import star from "../assets/star.svg";
+import { Link } from "react-router-dom";
 
 const ProductCard = ({ img, name, dsc, rating, price }) => {
 	return (
 		<div className="shadow-md rounded-2xl min-w-[300px] px-4 snap-start relative py-3">
-			<div className="w-full mx-auto overflow-hidden rounded-2xl">
-				<img src={img} alt="" />
-			</div>
+			<Link to="/product">
+				<div className="w-full mx-auto overflow-hidden rounded-2xl">
+					<img src={img} alt="illustration of product" />
+				</div>
+			</Link>
 
 			<div>
 				<h3 className="py-3 text-3xl tracking-wider">{name}</h3>
@@ -22,7 +25,7 @@ const ProductCard = ({ img, name, dsc, rating, price }) => {
 				<span>{rating}</span>
 			</div>
 
-			<div className="absolute text-6xl text-white bg-brown w-[50px] h-[50px] rounded-full flex justify-center items-center p-3 right-4 bottom-4">
+			<div className="cursor-pointer absolute text-6xl text-white bg-brown w-[50px] h-[50px] rounded-full flex justify-center items-center p-3 right-4 bottom-4">
 				+
 			</div>
 		</div>
