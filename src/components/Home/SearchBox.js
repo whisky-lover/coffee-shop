@@ -1,6 +1,6 @@
 import React from "react";
-import search from "../assets/search.svg";
-import filter from "../assets/filter.svg";
+import search from "../../assets/search.svg";
+import filter from "../../assets/filter.svg";
 
 const SearchBox = () => {
 	return (

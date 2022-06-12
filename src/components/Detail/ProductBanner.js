@@ -1,7 +1,7 @@
 import React from "react";
-import detail from "../assets/detail.jpeg";
+import detail from "../../assets/detail.jpeg";
 import { AiFillCaretLeft } from "react-icons/ai";
-import star from "../assets/star.svg";
+import star from "../../assets/star.svg";
 import { Link } from "react-router-dom";
 
 const ProductBanner = () => {

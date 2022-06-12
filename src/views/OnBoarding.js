@@ -1,5 +1,5 @@
 import React from "react";
-import OverlayOnBoarding from "../components/OverlayOnBoarding";
+import OverlayOnBoarding from "../components/OnBoarding/OverlayOnBoarding";
 import "./OnBoarding.css";
 
 const OnBoarding = () => {

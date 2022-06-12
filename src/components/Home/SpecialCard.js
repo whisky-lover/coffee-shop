@@ -1,5 +1,5 @@
 import React from "react";
-import special from "../assets/special.jpeg";
+import special from "../../assets/special.jpeg";
 
 const SpecialCard = () => {
 	return (

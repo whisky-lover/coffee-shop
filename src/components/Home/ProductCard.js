@@ -1,5 +1,5 @@
 import React from "react";
-import star from "../assets/star.svg";
+import star from "../../assets/star.svg";
 import { Link } from "react-router-dom";
 
 const ProductCard = ({ img, name, dsc, rating, price }) => {

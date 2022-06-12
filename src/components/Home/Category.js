@@ -1,7 +1,7 @@
 import React from "react";
-import cappu from "../assets/cappu.svg";
-import coldbrew from "../assets/coldbrew.svg";
-import expresso from "../assets/expresso.svg";
+import cappu from "../../assets/cappu.svg";
+import coldbrew from "../../assets/coldbrew.svg";
+import expresso from "../../assets/expresso.svg";
 import CartegoryTag from "./CartegoryTag";
 
 const categories = [

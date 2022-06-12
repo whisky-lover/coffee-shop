@@ -1,7 +1,7 @@
 import React from "react";
-import cart from "../assets/cart.svg";
-import heart from "../assets/heart.svg";
-import location from "../assets/location.svg";
+import cart from "../../assets/cart.svg";
+import heart from "../../assets/heart.svg";
+import location from "../../assets/location.svg";
 
 const NavBar = () => {
 	return (

@@ -1,10 +1,10 @@
 import React from "react";
-import NavBar from "../components/NavBar";
-import SearchBox from "../components/SearchBox";
-import Caterogy from "../components/Category";
-import Product from "../components/Product";
+import NavBar from "../components/Home/NavBar";
+import SearchBox from "../components/Home/SearchBox";
+import Caterogy from "../components/Home/Category";
+import Product from "../components/Home/Product";
 import fire from "../assets/fire.svg";
-import SpecialCard from "../components/SpecialCard";
+import SpecialCard from "../components/Home/SpecialCard";
 
 const Home = () => {
 	return (

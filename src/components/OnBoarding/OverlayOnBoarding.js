@@ -1,10 +1,10 @@
 import React from "react";
-import ButtonLarge from "../components/ButtonLarge";
-import PatternOnBoarding from "../components/PatternOnBoarding";
+import ButtonLarge from "./ButtonLarge";
+import PatternOnBoarding from "./PatternOnBoarding";
 
 const OverlayOnBoarding = () => {
 	return (
-		<div className="absolute text-white z-10 inset-0 bg-black bg-opacity-40">
+		<div className="absolute inset-0 z-10 text-white bg-black bg-opacity-40">
 			<div className="flex space-y-6 h-full flex-col px-5 py-[120px] justify-end items-center">
 				<h3 className="text-gray font-bold leading-[60px] text-4xl">
 					Good coffee, <br /> Good friends, <br /> let it blends
