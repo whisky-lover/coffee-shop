@@ -7,7 +7,7 @@ const OnBoarding = () => {
 		<div className="container relative mx-auto">
 			<OverlayOnBoarding />
 
-			<div className="relative blur-[2px] on-boarding bg-cover bg-no-repeat bg-center min-h-screen"></div>
+			<div className="relative lg:blur-none blur-[2px] on-boarding bg-cover bg-no-repeat bg-center min-h-screen"></div>
 		</div>
 	);
 };
