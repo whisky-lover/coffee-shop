@@ -9,6 +9,7 @@ const SearchBox = () => {
 				<img src={search} alt="search icon" />
 			</div>
 			<input
+				autoComplete="off"
 				className="w-full px-12 py-4 border rounded-full outline-none border-darkGray bg-lightGray placeholder:text-lg placeholder:text-darkGray"
 				type="text"
 				name="search"
