@@ -9,7 +9,7 @@ const ProductCard = ({ img, name, dsc, rating, price }) => {
 	return (
 		<div className="shadow-md rounded-2xl min-w-[300px] px-4 md:py-5 md:min-w-[350px] snap-start relative py-3">
 			<Link to="/product">
-				<Image img={img} />
+				<Image img={img} rounded={true} />
 			</Link>
 
 			<div>

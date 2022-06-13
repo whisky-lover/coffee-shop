@@ -5,7 +5,9 @@ const About = ({ content }) => {
 	return (
 		<div>
 			<h3 className="py-8 text-2xl font-semibold">About</h3>
-			<p className="text-lg leading-8">{content}</p>
+			<p className="text-lg leading-8 md:text-2xl md:leading-10">
+				{content}
+			</p>
 		</div>
 	);
 };

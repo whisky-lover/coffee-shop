@@ -15,8 +15,8 @@ const ingredients = [
 
 const DetailOverlay = () => {
 	return (
-		<div className="relative z-10 w-full min-h-[70vh] px-5 py-4 -translate-y-10 bg-white rounded-[36px]">
-			<div className="flex items-center justify-center w-full px-2 py-6 mx-auto space-x-3 rounded-full bg-gray">
+		<div className="relative z-10 w-full min-h-[70vh] px-5 py-4 md:px-10 md:py-8 -translate-y-10 bg-white rounded-[36px]">
+			<div className="flex items-center justify-center w-full px-2 py-6 mx-auto space-x-3 rounded-full md:space-x-8 bg-gray">
 				{ingredients.map((item, index) => (
 					<Ingredient
 						key={index}
@@ -27,7 +27,9 @@ const DetailOverlay = () => {
 				))}
 			</div>
 
-			<h3 className="py-8 text-2xl font-semibold">Coffee size</h3>
+			<h3 className="py-8 text-2xl font-semibold md:text-4xl">
+				Coffee size
+			</h3>
 			<SizeBoard />
 
 			<About />
