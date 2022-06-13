@@ -2,14 +2,14 @@ import React from "react";
 import star from "../../assets/star.svg";
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
+import Image from "../Utility/Image";
+import Icon from "../Utility/Icon";
 
 const ProductCard = ({ img, name, dsc, rating, price }) => {
 	return (
-		<div className="shadow-md rounded-2xl min-w-[300px] px-4 snap-start relative py-3">
+		<div className="shadow-md rounded-2xl min-w-[300px] px-4 md:py-5 md:min-w-[350px] snap-start relative py-3">
 			<Link to="/product">
-				<div className="w-full mx-auto overflow-hidden rounded-2xl">
-					<img src={img} alt="illustration of product" />
-				</div>
+				<Image img={img} />
 			</Link>
 
 			<div>
@@ -19,15 +19,12 @@ const ProductCard = ({ img, name, dsc, rating, price }) => {
 			</div>
 
 			{/* Absolute components */}
-			<div className="bg-brown text-lightGray w-[60px] p-2 flex items-center space-x-2 rounded-full absolute top-5 right-8">
-				<div>
-					<img src={star} alt="" />
-				</div>
-				<span>{rating}</span>
+			<div className="bg-brown text-lightGray w-[70px] md:w-[80px] p-2 flex items-center space-x-2 rounded-full absolute top-5 md:top-8 right-8 justify-center">
+				<Icon icon={star} dsc={<p>{rating}</p>} width={7} />
 			</div>
 
-			<div className="cursor-pointer absolute text-6xl text-white bg-brown w-[50px] h-[50px] rounded-full flex justify-center items-center p-3 right-4 bottom-4">
-				+
+			<div className="cursor-pointer absolute text-6xl text-white bg-brown w-[60px] h-[60px] md:w-[75px] md:h-[75px] rounded-full flex justify-center items-center p-3 right-4 bottom-4">
+				<span>+</span>
 			</div>
 		</div>
 	);

@@ -5,31 +5,26 @@ import Caterogy from "../components/Home/Category";
 import Product from "../components/Home/Product";
 import fire from "../assets/fire.svg";
 import SpecialCard from "../components/Home/SpecialCard";
+import Title from "../components/Utility/Title";
+import Icon from "../components/Utility/Icon";
 
 const Home = () => {
 	return (
-		<div className="container px-4 py-3 mx-auto">
+		<div className="container px-4 py-3 mx-auto md:px-10">
 			<NavBar />
 
-			<h3 className="py-8 text-2xl font-semibold">Coffee yet?</h3>
-
+			<Title title="Coffee yet?" />
 			<SearchBox />
 
-			<h3 className="py-8 text-2xl font-semibold">Categories</h3>
+			<Title title="Categories" />
 			<Caterogy />
 
 			<Product />
 
-			<h3 className="flex items-center w-full py-8 space-x-4 text-4xl font-semibold">
-				<span>Special Offer</span>
-				<div className="w-[40px]">
-					<img
-						src={fire}
-						alt="fire icon"
-						className="object-cover w-full h-full"
-					/>
-				</div>
-			</h3>
+			<Title
+				title="Special offer"
+				icon={<Icon icon={fire} width={8} />}
+			/>
 
 			<SpecialCard />
 		</div>

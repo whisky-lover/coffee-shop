@@ -39,7 +39,7 @@ const categories = [
 
 const Category = () => {
 	return (
-		<div className="flex items-center py-3 space-x-4 overflow-x-scroll scroll-smooth snap-x snap-mandatory">
+		<div className="flex items-center py-3 space-x-4 overflow-x-scroll md:py-4 md:space-x-5 scroll-smooth snap-x snap-mandatory">
 			{categories.map((item, index) => (
 				<CartegoryTag
 					key={index}
